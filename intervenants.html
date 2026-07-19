@@ -4,16 +4,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intervenants | AfriConnect Summit</title>
-      
+    <title>Intervenants | AfriConnect Summit 2026 </title>
+
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
     <!-- Le contenu de la page sera ajoute ici -->
-  
-   <!-- Votre script JavaScript -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo AfriConnect Summit 2026">
+
+                    <span>AfriConnect Summit 2026</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html" class="active">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Activer le mode sombre">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+            <button id="menu-toggle" aria-label="Ouvrir le menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section id="hero-intervenants">
+
+            <div class="hero-content">
+
+                <h1>Nos Intervenants</h1>
+
+                <p class="breadcrumb">
+                    <a href="index.html">Accueil</a> >
+                    <span>Intervenants</span>
+                </p>
+
+                <p>
+                    Découvrez les experts qui partageront leur expérience
+                    pendant AfriConnect Summit 2026.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="filtres">
+
+            <h2>Filtrer par spécialité</h2>
+
+            <button class="filter-btn active" data-filter="all">
+                Tous
+            </button>
+
+            <button class="filter-btn" data-filter="ia">
+                IA & Tech
+            </button>
+
+            <button class="filter-btn" data-filter="business">
+                Business
+            </button>
+
+            <button class="filter-btn" data-filter="design">
+                Design
+            </button>
+
+            <button class="filter-btn" data-filter="data">
+                Data
+            </button>
+
+        </section>
+
+        <section id="speakersGrid">
+
+        <!-- LISTE DES INTERVENANTS -->
+         <h2>Liste des intervenants</h2>
+
+        <article class="speaker-card" data-filter="ia">
+
+            <img src="images/intervenante.jpg" alt="Amina Diallo">
+
+            <h3>Amina Diallo</h3>
+
+            <p class="specialite">
+                Experte IA
+            </p>
+
+            <p><strong>Sénégal</strong></p>
+
+        </article>
+
+        <article class="speaker-card" data-filter="business">
+
+            <img src="images/intervenant2.jpg" alt="David Kouassi">
+
+            <h3>David Kouassi</h3>
+
+            <p class="specialite">Business</p>
+
+            <p><strong>Côte d'Ivoire</strong></p>
+
+        </article>
+
+        <article class="speaker-card" data-filter="design">
+
+            <img src="images/intervenante2.jpg" alt="Grace Ndaye">
+
+            <h3>Grace Ndaye</h3>
+
+            <p class="specialite">Design </p>
+
+            <p><strong>Rwanda</strong></p>
+
+        </article>
+
+        <article class="speaker-card" data-filter="data">
+
+            <img src="images/intervenant4.jpg" alt="Samuel Mensah">
+
+            <h3>Samuel Mensah</h3>
+
+            <p class="specialite">Data Scientist</p>
+
+            <p><strong>Ghana</strong></p>
+
+        </article>
+
+        <article class="speaker-card" data-filter="business">
+
+            <img src="images/intervenante5.jpg" alt="Fatou Ndiaye">
+
+            <h3>Fatou Ndiaye</h3>
+
+            <p class="specialite">Business</p>
+
+            <p><strong>Sénégal</strong></p>
+
+        </article>
+
+        <article class="speaker-card" data-filter="ia">
+
+            <img src="images/intervenant6.jpg" alt="Jean Biko">
+
+            <h3>Jean Biko</h3>
+
+            <p class="specialite">IA & Technologies</p>
+
+            <p><strong>Afrique du Sud</strong></p>
+
+        </article>
+        <article class="speaker-card" data-filter="data">
+
+            <img src="images/intervenante7.jpg" alt="Saly Ba">
+
+            <h3>Saly Ba</h3>
+
+            <p class="specialite">Data</p>
+
+            <p><strong>Congo</strong></p>
+
+        </article>
+        <article class="speaker-card" data-filter="data">
+
+            <img src="images/intervenant8.jpg" alt="Alassane Ba">
+
+            <h3>Alassane Ba</h3>
+
+            <p class="specialite">Data Engineer</p>
+
+            <p><strong>Cameroun</strong></p>
+
+        </article>
+        <article class="speaker-card" data-filter="design">
+
+            <img src="images/intervenante9.jpg" alt="Coumba Sy">
+
+            <h3>Coumba Sy</h3>
+
+            <p class="specialite">Design</p>
+
+            <p><strong>Sénégal</strong></p>
+
+        </article>
+
+        </section>
+
+        <!-- CTA -->
+
+        <section id="cta-intervenants">
+
+            <h2>Venez rencontrer ces experts</h2>
+
+            <p>
+
+                Profitez de conférences, ateliers et séances de networking
+                avec des professionnels venus de toute l'Afrique.
+
+            </p>
+
+            <a href="contact.html" class="btn">
+
+                Réserver ma place
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>AfriConnect Summit</h3>
+
+            <p>
+
+                Le rendez-vous incontournable de l'innovation et de la
+                technologie en Afrique.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Liens rapides</h3>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="programme.html">Programme</a></li>
+
+                <li><a href="intervenants.html">Intervenants</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Suivez-nous</h3>
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>Email : africonnectsummit@gmail.com</p>
+
+            <p>Téléphone : +221 77 441 48 07</p>
+
+            <p>Adresse : Dakar, Sénégal</p>
+
+        </div>
+
+        <p>
+
+            © <span id="year"></span> AfriConnect Summit 2026 - Tous droits réservés.
+
+        </p>
+
+        <button id="back-to-top" aria-label="Retour en haut">
+
+            ↑
+
+        </button>
+
+    </footer>
+    <!-- Votre script JavaScript -->
     <script src="js/main.js"></script>
 </body>
 

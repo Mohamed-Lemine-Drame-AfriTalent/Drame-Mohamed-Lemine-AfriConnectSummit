@@ -8,11 +8,260 @@
     
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
     <!-- Le contenu de la page sera ajoute ici -->
-   
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo AfriConnect Summit 2026">
+
+                    <span>AfriConnect Summit 2026</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html" class="active">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Activer le mode sombre">
+                
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+            
+            <button id="menu-toggle" aria-label="Ouvrir le menu">
+
+                <i class="fa-solid fa-bars"></i>
+                
+            </button>
+
+        </nav>
+    </header>
+
+        <!-- MAIN -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section id="programme-hero">
+
+            <h1>Programme Officiel</h1>
+
+            <p>
+                Découvrez les conférences, ateliers et panels qui rythmeront
+                les trois journées du AfriConnect Summit 2026.
+            </p>
+
+        </section>
+
+        <!-- JOUR 1 -->
+
+        <section class="jour">
+
+            <h2>Jour 1 - 15 Novembre 2026</h2>
+
+            <article class="programme-card">
+
+                <h3>09h00 - Cérémonie d'ouverture</h3>
+
+                <p>
+                    Discours de bienvenue et présentation des objectifs du sommet.
+                </p>
+
+            </article>
+
+            <article class="programme-card">
+
+                <h3>10h30 - Intelligence Artificielle en Afrique</h3>
+
+                <p>
+                    Les opportunités offertes par l'IA pour les entreprises africaines.
+                </p>
+
+            </article>
+
+            <article class="programme-card">
+
+                <h3>14h00 - Atelier Développement Web</h3>
+
+                <p>
+                    Création d'applications modernes avec HTML, CSS et JavaScript.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- JOUR 2 -->
+
+        <section class="jour">
+
+            <h2>Jour 2 - 16 Novembre 2026</h2>
+
+            <article class="programme-card">
+
+                <h3>09h00 - Cybersécurité</h3>
+
+                <p>
+                    Les bonnes pratiques pour protéger les systèmes informatiques.
+                </p>
+
+            </article>
+
+            <article class="programme-card">
+
+                <h3>11h00 - Cloud Computing</h3>
+
+                <p>
+                    Les solutions Cloud pour les entreprises africaines.
+                </p>
+
+            </article>
+
+            <article class="programme-card">
+
+                <h3>15h00 - Startup Pitch</h3>
+
+                <p>
+                    Présentation des meilleures startups innovantes du continent.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- JOUR 3 -->
+
+        <section class="jour">
+
+            <h2>Jour 3 - 17 Novembre 2026</h2>
+
+            <article class="programme-card">
+
+                <h3>09h30 - Entrepreneuriat numérique</h3>
+
+                <p>
+                    Comment créer une entreprise technologique durable.
+                </p>
+
+            </article>
+
+            <article class="programme-card">
+
+                <h3>13h00 - Networking</h3>
+
+                <p>
+                    Rencontre entre investisseurs, entreprises et participants.
+                </p>
+
+            </article>
+
+            <article class="programme-card">
+
+                <h3>16h00 - Clôture officielle</h3>
+
+                <p>
+                    Remerciements et annonce de l'édition 2027.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- CTA -->
+
+        <section id="programme-cta">
+
+            <h2>Prêt à participer ?</h2>
+
+            <p>
+                Réservez votre place dès aujourd'hui et rejoignez les leaders
+                de l'innovation africaine.
+            </p>
+
+            <a href="contact.html" class="btn">
+                S'inscrire maintenant
+            </a>
+
+        </section>
+
+    </main>
+
+        <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+
+            <h3>AfriConnect Summit</h3>
+
+            <p>
+                Le rendez-vous incontournable de l'innovation et de la technologie en Afrique.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Liens rapides</h3>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="programme.html">Programme</a></li>
+
+                <li><a href="intervenants.html">Intervenants</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Suivez-nous</h3>
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>Email : africonnectsummit@gmail.com</p>
+
+            <p>Téléphone : +221 77 441 48 07</p>
+
+            <p>Adresse : Dakar, Sénégal</p>
+
+        </div>
+
+        <p>
+
+            © <span id="year"></span> AfriConnect Summit 2026 - Tous droits réservés.
+
+        </p>
+
+        <button id="back-to-top" aria-label="Retour en haut">
+
+            ↑
+
+        </button>
+
+    </footer>
    <!-- Votre script JavaScript -->
     <script src="js/main.js"></script>
 </body>

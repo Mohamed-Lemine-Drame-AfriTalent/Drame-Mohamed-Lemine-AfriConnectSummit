@@ -4,16 +4,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | AfriConnect Summit</title>
-     
+    <title>Contact | AfriConnect Summit 2026 </title>
+
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
     <!-- Le contenu de la page sera ajoute ici -->
-    
-   <!-- Votre script JavaScript -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo AfriConnect Summit 2026">
+
+                    <span>AfriConnect Summit 2026</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Activer le mode sombre">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+            <button id="menu-toggle" aria-label="Ouvrir le menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero-contact">
+            <div class="container">
+                <h1>Contact & Inscription</h1>
+
+                <nav class="breadcrumb">
+                    <a href="index.html">Accueil</a>
+                    <span> > </span>
+                    <span>Contact</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- FORMULAIRE DE CONTACT -->
+
+        <section class="contact-section container">
+
+            <div class="contact-wrapper">
+
+
+                <!-- FORMULAIRE -->
+
+                <div class="contact-form">
+
+                    <h2>Inscrivez-vous au sommet</h2>
+
+
+                    <form id="contactForm">
+
+
+                        <div class="form-group">
+
+                            <label>Nom complet</label>
+
+                            <input type="text" id="name" placeholder="Votre nom complet" required>
+
+                            <small id="nameError"></small>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label>Email</label>
+
+                            <input type="email" id="email" placeholder="exemple@gmail.com" required>
+
+                            <small id="emailError"></small>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label>Téléphone</label>
+
+                            <input type="tel" id="telephone" placeholder="+221 77 000 00 00" required>
+
+                            <small id="telephoneError"></small>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label>Type de participation</label>
+
+                            <select id="participation" required>
+
+                                <option value="">Choisir</option>
+
+                                <option>Participant</option>
+
+                                <option>Intervenant</option>
+
+                                <option>Partenaire</option>
+
+                                <option>Sponsor</option>
+
+                            </select>
+
+                            <small id="participationError"></small>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label>Pays africain</label>
+
+                            <select id="pays" required>
+
+                                <option value="">Votre pays</option>
+
+                                <option>Sénégal</option>
+                                <option>Côte d'Ivoire</option>
+                                <option>Mali</option>
+                                <option>Maroc</option>
+                                <option>Nigeria</option>
+                                <option>Ghana</option>
+                                <option>Kenya</option>
+                                <option>Rwanda</option>
+                                <option>Afrique du Sud</option>
+                                <option>Egypte</option>
+
+                            </select>
+
+                            <small id="paysError"></small>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label>Message / Motivation</label>
+
+                            <textarea id="message" rows="5" placeholder="Expliquez votre motivation..."
+                                required></textarea>
+
+                            <small id="messageError"></small>
+
+                        </div>
+
+
+
+                        <button type="submit">
+                            Envoyer mon inscription
+                        </button>
+
+
+
+                        <p id="successMessage"></p>
+
+
+                    </form>
+
+
+                </div>
+
+
+
+                <!-- INFORMATIONS -->
+
+                <div class="contact-info">
+
+                    <h2>Informations</h2>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Dakar, Sénégal
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +221 77 441 48 07
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        africonnectsummit@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        Lundi - Vendredi : 08h00 - 18h00
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <section class="faq container">
+
+            <h2>Questions fréquentes</h2>
+
+
+            <div class="faq-item">
+
+                <input type="checkbox" id="q1">
+
+                <label for="q1">
+                    Qu'est-ce que AfriConnect Summit ?
+                </label>
+
+                <div class="answer">
+                    AfriConnect Summit est une conférence panafricaine dédiée aux technologies,
+                    à l'innovation et aux échanges professionnels.
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <input type="checkbox" id="q2">
+
+                <label for="q2">
+                    Comment participer à l'événement ?
+                </label>
+
+                <div class="answer">
+                    Il suffit de remplir le formulaire d'inscription disponible sur cette page.
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <input type="checkbox" id="q3">
+
+                <label for="q3">
+                    Qui peut participer au sommet ?
+                </label>
+
+                <div class="answer">
+                    Les étudiants, professionnels, entreprises et passionnés de technologie
+                    peuvent participer.
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <input type="checkbox" id="q4">
+
+                <label for="q4">
+                    Où se déroule AfriConnect Summit ?
+                </label>
+
+                <div class="answer">
+                    L'événement se déroule à Dakar, Sénégal.
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <input type="checkbox" id="q5">
+
+                <label for="q5">
+                    Quels sont les types de participation disponibles ?
+                </label>
+
+                <div class="answer">
+                    Participant, intervenant, partenaire ou sponsor.
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="map container">
+            <h2>Nous trouver</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30865.529487136653!2d-17.4372219!3d14.758256249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1784434119950!5m2!1sfr!2ssn"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div>
+
+            <h3>AfriConnect Summit</h3>
+
+            <p>
+                Le rendez-vous incontournable de l'innovation et de la technologie en Afrique.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Liens rapides</h3>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="programme.html">Programme</a></li>
+
+                <li><a href="intervenants.html">Intervenants</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Suivez-nous</h3>
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                Email: africonnectsummit@gmail.com
+            </p>
+
+
+            <p>
+                Téléphone: +221 77 441 48 07
+            </p>
+
+            <p>
+                Adresse: 123 Rue de l'Innovation, Dakar, Sénégal
+            </p>
+
+        </div>
+        <div>
+            <p>
+                © <span id="year"></span> AfriConnect Summit 2026 - Tous droits réservés.
+            </p>
+        </div>
+        <button id="back-to-top" aria-label="Retour en haut">
+            ↑
+        </button>
+
+    </footer>
+    <!-- Votre script JavaScript -->
     <script src="js/main.js"></script>
 </body>
 

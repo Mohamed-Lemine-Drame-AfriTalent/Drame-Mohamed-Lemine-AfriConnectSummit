@@ -5,15 +5,348 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriConnect Summit | Accueil</title>
-    
+
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
     <!-- Le contenu de la page sera ajoute ici -->
-   
-   <!-- Votre script JavaScript -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo AfriConnect Summit 2026">
+
+                    <span>AfriConnect Summit 2026</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Activer le mode sombre">
+                
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+            
+            <button id="menu-toggle" aria-label="Ouvrir le menu">
+
+                <i class="fa-solid fa-bars"></i>
+                
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div>
+                <h1> AfriConnect Summit 2026 </h1>
+                <p>
+                    Le plus grand rendez-vous africain de l'innovation, du numérique
+                    et de l'entrepreneuriat.
+                </p>
+                <p> 📍 Dakar, Sénégal | 📅 15 au 17 Novembre 2026</p>
+
+                <div id="countdown">
+                    <!-- Le compte à rebours sera affiché ici -->
+                    <div>
+                        <span id="days">00</span>
+                        <p>Jours</p>
+                    </div>
+                    <div>
+                        <span id="hours">00</span>
+                        <p>Heures</p>
+                    </div>
+                    <div>
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div>
+                        <span id="seconds">00</span>
+                        <p>Secondes</p>
+                    </div>
+
+                </div>
+                <div>
+                    <a href="contact.html" class="btn">S'inscrire</a>
+                    <a href="programme.html" class="btn">Voir le programme</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="Conférence technologique AfriConnect Summit 2026">
+            </div>
+        </section>
+
+        <section id="statistiques">
+
+            <h2>Statistiques Clés</h2>
+
+            <article>
+
+                <h3>+<span class="counter" data-target="1200">0</span></h3>
+
+                <p>Participants attendus</p>
+
+            </article>
+
+            <article>
+
+                <h3>+<span class="counter" data-target="48">0</span></h3>
+
+                <p>Intervenants</p>
+
+            </article>
+
+            <article>
+
+                <h3>+<span class="counter" data-target="3">0</span></h3>
+
+                <p>Jours</p>
+
+            </article>
+
+            <article>
+
+                <h3>+<span class="counter" data-target="12">0</span></h3>
+
+                <p>
+                    Pays africains représentés
+                </p>
+
+            </article>
+
+        </section>
+
+        <section id="pourquoi">
+
+            <h2>Pourquoi Participer ?</h2>
+
+            <p>
+                Le AfriConnect Summit 2026 est l'occasion idéale pour les professionnels,
+                les entrepreneurs et les passionnés de technologie
+                de se connecter, d'apprendre et d'innover.
+                Découvrez les dernières tendances,
+                participez à des ateliers interactifs et élargissez votre réseau.
+            </p>
+
+            <article>
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Networking</h3>
+
+                <p>
+                    Élargissez votre réseau professionnel et
+                    connectez-vous avec des experts de l'industrie.
+                </p>
+            </article>
+
+            <article>
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>Innovation</h3>
+
+                <p>
+                    Découvrez les dernières tendances de la technologie africaine.
+                </p>
+
+            </article>
+
+            <article>
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <h3>Opportunités</h3>
+
+                <p>
+                    Rencontrez des investisseurs et des entreprises innovantes.
+                </p>
+
+            </article>
+
+        </section>
+        <section id="intervenants">
+
+            <h2>Intervenants vedettes</h2>
+
+            <article>
+
+                <img src="images/intervenante.jpg" alt="Intervenant 1">
+
+                <h3>Amina Diallo</h3>
+
+                <p>Experte IA</p>
+
+                <p>Sénégal</p>
+
+            </article>
+
+            <article>
+
+                <img src="images/intervenant2.jpg" alt="Intervenant 2">
+
+                <h3>David Kouassi</h3>
+
+                <p>CEO Tech</p>
+
+                <p>Côte d'Ivoire</p>
+
+            </article>
+
+            <article>
+
+                <img src="images/intervenante2.jpg" alt="Intervenant 3">
+
+                <h3>Grace Ndaye</h3>
+
+                <p>UX Designer</p>
+
+                <p>Rwanda</p>
+
+            </article>
+
+            <article>
+
+                <img src="images/intervenant4.jpg" alt="Intervenant 4">
+
+                <h3>Samuel Mensah</h3>
+
+                <p>Data Scientist</p>
+
+                <p>Ghana</p>
+
+            </article>
+
+            <a href="intervenants.html">
+                Voir tous les intervenants
+            </a>
+
+        </section>
+
+        <!-- SPONSORS -->
+
+        <section id="sponsors">
+
+            <h2>Nos partenaires</h2>
+
+            <div>
+
+                <h3>Or</h3>
+
+                <p>Sonatel</p>
+
+                <p>Orange</p>
+
+            </div>
+
+            <div>
+
+                <h3>Argent</h3>
+
+                <p>Wave</p>
+
+                <p>Ecobank</p>
+
+            </div>
+
+            <div>
+
+                <h3>Bronze</h3>
+
+                <p>StartUp Hub</p>
+
+                <p>Digital Africa</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>AfriConnect Summit</h3>
+
+            <p>
+                Le rendez-vous incontournable de l'innovation et de la technologie en Afrique.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Liens rapides</h3>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="programme.html">Programme</a></li>
+
+                <li><a href="intervenants.html">Intervenants</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Suivez-nous</h3>
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                Email: africonnectsummit@gmail.com
+            </p>
+
+
+            <p>
+                Téléphone: +221 77 441 48 07
+            </p>
+
+            <p>
+                Adresse: 123 Rue de l'Innovation, Dakar, Sénégal
+            </p>
+
+        </div>
+        <div>
+        <p>
+            © <span id="year"></span> AfriConnect Summit 2026 - Tous droits réservés.
+        </p>
+        </div>
+        <button id="back-to-top" aria-label="Retour en haut">
+            ↑
+        </button>
+
+    </footer>
+
+    <!-- Votre script JavaScript -->
     <script src="js/main.js"></script>
 </body>
 
