@@ -1,0 +1,238 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+
+/* Les variables de couleur et de police */
+:root {
+
+    /* Couleur principale */
+    --color-primary: #0A84FF;
+
+    /* Deuxième couleur */
+    --color-secondary: #14B8A6;
+
+    /* Couleur des boutons importants */
+    --color-accent: #F59E0B;
+
+    /* Couleur du texte */
+    --color-dark: #1E293B;
+
+    /* Couleur du fond */
+    --color-light: #F8FAFC;
+
+    /* Blanc */
+    --color-white: #FFFFFF;
+
+    /* Gris pour les paragraphes */
+    --color-gray: #64748B;
+
+    /* Police des titres */
+    --font-title: "Playfair Display", serif;
+
+    /* Police du texte */
+    --font-body: "Poppins", sans-serif;
+
+    /* Espacement */
+    --spacing: 20px;
+
+    /* Coins arrondis */
+    --radius: 15px;
+
+    /* Ombre */
+    --shadow: 0 8px 20px rgba(0, 0, 0, .10);
+
+    /* Animation */
+    --transition: .3s ease;
+
+}
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style du corps de la page */
+body {
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    line-height: 1.6;
+    background-color: var(--color-light);
+}
+
+/* Défilement fluide */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Les images ne dépassent pas leur conteneur */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Enlever le soulignement des liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Enlever les puces des listes */
+ul {
+    list-style: none;
+}
+
+/* style des titres */
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
+    color: var(--color-dark);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+
+    margin-bottom: 15px;
+    color: var(--color-gray);
+
+}
+
+/* largeur maximale des section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* style general des boutons */
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+/* Bare de navigation (navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--color-white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 80px;
+    height: 50px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-title);
+    color: var(--color-primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.nav-links a.active {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+#theme-toggle,
+#menu-toggle {
+    background: none;
+    font-size: 1.2rem;
+    color: var(--color-dark);
+}
+
+#menu-toggle {
+    display: none;
+}
+/* Section hero */
+#hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 60px;
+    min-height: 90vh;
+    padding: 120px 8%;
+}
+
+#hero h1 {
+    font-size: 3.8rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--color-dark);
+}
+
+#hero p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+    margin-right: 15px;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: var(--color-secondary);
+}
