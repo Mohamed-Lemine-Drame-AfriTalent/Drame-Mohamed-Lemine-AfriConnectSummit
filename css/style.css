@@ -60,7 +60,7 @@ body {
     color: var(--color-dark);
     line-height: 1.6;
     background-color: var(--color-light);
-    transition : background .3s ease, color .3s ease;
+    transition: background .3s ease, color .3s ease;
 }
 
 /* Défilement fluide */
@@ -132,6 +132,7 @@ button {
     background: none;
     font-family: inherit;
 }
+
 /* Bare de navigation (navbar) */
 .navbar {
     display: flex;
@@ -192,6 +193,7 @@ button {
 #menu-toggle {
     display: none;
 }
+
 /* Section hero */
 #hero {
     display: grid;
@@ -218,7 +220,7 @@ button {
 .hero-image img {
     width: 100%;
     border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
 }
 
 .btn {
@@ -240,122 +242,125 @@ button {
 
 /* ================= COMPTE À REBOURS ================= */
 
-#countdown{
-    display:flex;
-    gap:20px;
-    margin:35px 0;
+#countdown {
+    display: flex;
+    gap: 20px;
+    margin: 35px 0;
 }
 
-#countdown div{
-    background:var(--color-white);
-    padding:20px;
-    text-align:center;
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    min-width:90px;
+#countdown div {
+    background: var(--color-white);
+    padding: 20px;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    min-width: 90px;
 }
 
-#countdown span{
-    display:block;
-    font-size:2rem;
-    font-weight:bold;
-    color:var(--color-primary);
+#countdown span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
 }
 
 /* ================= STATISTIQUES ================= */
 
-#statistiques h2{
+#statistiques h2 {
     grid-column: 1 / -1;
-    text-align:center;
-    margin-bottom:50px;
-}
-#statistiques{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-    text-align:center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#statistiques article{
-    background:var(--color-white);
-    padding:30px;
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    transition:var(--transition);
+#statistiques {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    text-align: center;
 }
 
-#statistiques article:hover{
-    transform:translateY(-8px);
+#statistiques article {
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
 }
 
-#statistiques h3{
-    font-size:2.3rem;
-    color:var(--color-primary);
+#statistiques article:hover {
+    transform: translateY(-8px);
+}
+
+#statistiques h3 {
+    font-size: 2.3rem;
+    color: var(--color-primary);
 }
 
 /* Pourquoi participer à l'AfriConnect Summit ? */
 
-#pourquoi h2{
+#pourquoi h2 {
     grid-column: 1 / -1;
-    text-align:center;
-    margin-bottom:50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#pourquoi{
+#pourquoi {
     text-align: center;
 }
 
-#pourquoi article{
+#pourquoi article {
     display: inline-block;
     width: 320px;
-    background:var(--color-white);
-    padding:30px;
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     margin: 20px;
     transition: var(--transition);
 }
 
-#pourquoi article:hover{
-    transform:translateY(-8px);
+#pourquoi article:hover {
+    transform: translateY(-8px);
 }
 
-#pourquoi i{
-    font-size:2rem;
-    color:var(--color-primary);
+#pourquoi i {
+    font-size: 2rem;
+    color: var(--color-primary);
     margin-bottom: 20px;
 }
 
-#intervenants h2{
+#intervenants h2 {
     grid-column: 1 / -1;
-    text-align:center;
-    margin-bottom:50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#intervenants{
+#intervenants {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     text-align: center;
 }
 
-#intervenants article{
-    background:var(--color-white);
-   overflow: hidden;
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
+#intervenants article {
+    background: var(--color-white);
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     transition: var(--transition);
 }
 
-#intervenants article:hover{
-    transform:translateY(-8px);
+#intervenants article:hover {
+    transform: translateY(-8px);
 }
-#intervenants img{
+
+#intervenants img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-#intervenants a{
+
+#intervenants a {
     background: var(--color-primary);
     color: var(--color-white);
     text-decoration: none;
@@ -365,180 +370,194 @@ button {
     padding: 10px 20px;
     border-radius: var(--radius);
 }
-#intervenants a:hover{
+
+#intervenants a:hover {
     background: var(--color-secondary);
 }
 
-#sponsors h2{
+#sponsors h2 {
     grid-column: 1 / -1;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
-#sponsors{
+
+#sponsors {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     text-align: center;
 }
 
-#sponsors div{
-    background:var(--color-white);
-    padding:30px;
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
+#sponsors div {
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     transition: var(--transition);
 }
-#sponsors div:hover{
-    transform:translateY(-8px);
+
+#sponsors div:hover {
+    transform: translateY(-8px);
 }
 
 #programme-hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, var(--color-primary),var(--color-secondary));
-  color: var(--color-white);
-  border-radius: var(--radius);
-  margin-bottom: 50px; /* Espace important avant d'attaquer le programme */
-  box-shadow: var(--shadow);
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+    border-radius: var(--radius);
+    margin-bottom: 50px;
+    /* Espace important avant d'attaquer le programme */
+    box-shadow: var(--shadow);
 }
 
 #programme-hero h1 {
-  font-size: 2.8rem;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: -1px;
-  color: var(--color-white);
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    color: var(--color-white);
 }
 
 #programme-hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  opacity: 0.9; /* Légèrement transparent pour adoucir le texte blanc */
-  color: var(--color-white);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+    /* Légèrement transparent pour adoucir le texte blanc */
+    color: var(--color-white);
 }
 
 /* 4. LES JOURNÉES DU PROGRAMME (.jour)*/
 
 /* Le conteneur magique : il passe en grille sur PC, et reste en liste sur Mobile */
 .jour {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px; /* Espace régulier entre toutes les cartes */
-  margin-bottom: 60px; /* Augmenter à 60% pour aerer le disegn entre chaque jour */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    /* Espace régulier entre toutes les cartes */
+    margin-bottom: 60px;
+    /* Augmenter à 60% pour aerer le disegn entre chaque jour */
 }
 
 /* Pour que le titre H2 prenne toute la largeur de la grille et ne soit pas coincé dans une case */
 .jour h2 {
-  grid-column: 1 / -1;
-  font-size: 2rem;
-  color: var(--color-dark);
-  margin-bottom: 30px;
-  display: inline-block;
-  position: relative;
-  padding-bottom: 8px;
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    color: var(--color-dark);
+    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 8px;
 
 }
-.jour h2::after{
+
+.jour h2::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 60%;
     height: 4px;
-    background-color: var(--color-accent); /* changer pour l'accentuation */
+    background-color: var(--color-accent);
+    /* changer pour l'accentuation */
     border-radius: 2px;
 }
 
 /* 5. LES CARTES STYLISÉES (.programme-card) */
 .programme-card {
-  background:var(--color-white);
-  padding: 30px;
-  border-radius: var(--radius);
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow:var(--shadow);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: var(--transition);
-  position: relative;
-  overflow: hidden; /* Pour contenir les effets de design */
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    /* Pour contenir les effets de design */
 }
 
 /* Petite touche premium : une fine ligne orange sur le haut de la carte au survol */
 .programme-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-primary);
-  transform: scaleX(0); /* Invisible par défaut */
-  transition: var(--transition);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    /* Invisible par défaut */
+    transition: var(--transition);
 }
 
 .programme-card:hover::before {
-  transform: scaleX(1); /* Devient visible en glissant au survol */
+    transform: scaleX(1);
+    /* Devient visible en glissant au survol */
 }
 
 .programme-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow); /* Ombre dynamique */
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    /* Ombre dynamique */
 }
 
 /* Mise en valeur des horaires */
 .programme-card h3 {
-  margin-top: 0;
-  font-size: 1.25rem;
-  color: var(--color-dark);
-  line-height: 1.4;
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: var(--color-dark);
+    line-height: 1.4;
 }
 
 .programme-card p {
-  color:var(--color-gray);
-  font-size: 0.95rem;
-  margin-bottom: 0;
-  margin-top: 10px;
+    color: var(--color-gray);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 
 /* 6. SECTION APPEL À L'ACTION (#programme-cta)*/
 #programme-cta {
-  text-align: center;
-  background-color: var(--color-light);
-  padding: 50px 30px;
-  border-radius: var(--radius);
-  border: 2px solid rgba(0, 0, 0, 0.1); /* Bordure en pointillés pour le style */
-  margin-top: 80px;
-  box-shadow: var(--shadow);
+    text-align: center;
+    background-color: var(--color-light);
+    padding: 50px 30px;
+    border-radius: var(--radius);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    /* Bordure en pointillés pour le style */
+    margin-top: 80px;
+    box-shadow: var(--shadow);
 }
 
 #programme-cta h2 {
-  color: var(--color-dark);
-  font-size: 2rem;
-  margin-top: 0;
+    color: var(--color-dark);
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 #programme-cta p {
-  margin-bottom: 30px;
-  font-size: 1.1rem;
-  color: var(--color-gray);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: var(--color-gray);
 }
 
 /* Hero de la page intervenants */
-#hero-intervenants{
-    background: linear-gradient(135deg, var(--color-primary),var(--color-secondary));
+#hero-intervenants {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: var(--color-white);
     text-align: center;
     padding: 80px 20px;
 }
 
-#hero-intervenants h1{
+#hero-intervenants h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: var(--color-white);
 }
 
-#hero-intervenants p{
+#hero-intervenants p {
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto;
@@ -552,11 +571,13 @@ button {
     font-size: 0.9rem;
     color: var(--color-gray);
 }
+
 .breadcrumb a {
     color: var(--color-white);
     text-decoration: none;
     font-weight: 500;
 }
+
 .breadcrumb span {
     color: var(--color-white);
 }
@@ -573,7 +594,7 @@ button {
     margin-bottom: 20px;
 }
 
-.filter-btn{
+.filter-btn {
     background: var(--color-white);
     color: var(--color-dark);
     border: 1px solid var(--color-primary);
@@ -584,11 +605,12 @@ button {
     font-weight: 500;
 }
 
-.filter-btn:hover{
-     background: var(--color-primary);
+.filter-btn:hover {
+    background: var(--color-primary);
     color: var(--color-white);
 }
-.filter-btn.active{
+
+.filter-btn.active {
     background: var(--color-primary);
     color: var(--color-white);
 }
@@ -596,7 +618,7 @@ button {
 /* Liste des intervenants */
 #speakersGrid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -616,9 +638,11 @@ button {
     text-align: center;
     padding-bottom: 25px;
 }
+
 .speaker-card:hover {
     transform: translateY(-8px);
 }
+
 .speaker-card img {
     width: 100%;
     height: 300px;
@@ -630,11 +654,13 @@ button {
     margin-top: 15px;
     margin-bottom: 5px;
 }
+
 .specialite {
     font-weight: 500;
     color: var(--color-primary);
 }
-.speaker-card strong{
+
+.speaker-card strong {
     color: var(--color-dark);
 }
 
@@ -647,39 +673,40 @@ button {
 
 }
 
-#cta-intervenants h2{
+#cta-intervenants h2 {
     color: var(--color-white);
 }
-#cta-intervenants p{
+
+#cta-intervenants p {
     color: var(--color-white);
     max-width: 700px;
     margin: 20px auto 30px;
 }
 
 /* Hero Contact */
-.hero-contact{
-    background: linear-gradient(135deg, var(--color-primary),var(--color-secondary));
+.hero-contact {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: var(--color-white);
     text-align: center;
     padding: 80px 20px;
 }
 
-.hero-contact h1{
+.hero-contact h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: var(--color-white);
 }
 
-.hero-contact .breadcrumb{
+.hero-contact .breadcrumb {
     color: var(--color-white);
 }
 
-.hero-contact .breadcrumb a{
+.hero-contact .breadcrumb a {
     color: var(--color-white);
     font-weight: 500;
 }
 
-.contact-wrapper{
+.contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
@@ -688,28 +715,30 @@ button {
 
 /* Formulaire */
 
-.contact-form{
+.contact-form {
     background: var(--color-white);
     padding: 35px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
-.contact-form h2{
+
+.contact-form h2 {
     margin-bottom: 20px;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 20px;
 }
 
-.form-group label{
+.form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
 }
+
 .form-group input,
 .form-group select,
-.form-group textarea{
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #d6d6d6;
@@ -719,13 +748,14 @@ button {
     outline: none;
     transition: var(--transition);
 }
+
 .form-group input:focus,
 .form-group select:focus,
-.form-group textarea:focus{
+.form-group textarea:focus {
     border-color: var(--color-primary);
 }
 
-.form-group small{
+.form-group small {
     display: block;
     margin-top: 5px;
     color: red;
@@ -734,7 +764,7 @@ button {
 
 /* Bouton d'envoi */
 
-.contact-form button{
+.contact-form button {
     background: var(--color-primary);
     color: var(--color-white);
     padding: 12px 25px;
@@ -745,13 +775,13 @@ button {
     width: 100%;
 }
 
-.contact-form button:hover{
+.contact-form button:hover {
     background: var(--color-secondary);
 }
 
 /* Message de succès */
 
-#success{
+#success {
     text-align: center;
     margin-top: 15px;
     color: green;
@@ -760,37 +790,37 @@ button {
 
 /*  INFORMATIONS  */
 
-.contact-info{
+.contact-info {
     background: var(--color-white);
     padding: 35px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
 
-.contact-info h2{
+.contact-info h2 {
     margin-bottom: 25px;
 }
 
-.contact-info p{
+.contact-info p {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 18px;
 }
 
-.contact-info i{
+.contact-info i {
     color: var(--color-primary);
     font-size: 1.2rem;
 }
 
 /*  FAQ  */
 
-.faq h2{
+.faq h2 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.faq-item{
+.faq-item {
     background: var(--color-white);
     margin-bottom: 20px;
     border-radius: var(--radius);
@@ -800,13 +830,13 @@ button {
 
 /* On cache la case à cocher */
 
-.faq-item input{
+.faq-item input {
     display: none;
 }
 
 /* Question */
 
-.faq-item label{
+.faq-item label {
     display: block;
     padding: 18px 20px;
     cursor: pointer;
@@ -816,7 +846,7 @@ button {
 
 /* Petit + à droite */
 
-.faq-item label::after{
+.faq-item label::after {
     content: "+";
     position: absolute;
     right: 20px;
@@ -825,7 +855,7 @@ button {
 
 /* Réponse */
 
-.answer{
+.answer {
     max-height: 0;
     overflow: hidden;
     padding: 0 20px;
@@ -835,23 +865,23 @@ button {
 
 /* Lorsque la question est ouverte */
 
-.faq-item input:checked ~ .answer{
+.faq-item input:checked~.answer {
     max-height: 200px;
     padding: 20px;
 }
 
-.faq-item input:checked + label::after{
+.faq-item input:checked+label::after {
     content: "-";
 }
 
 /*  GOOGLE MAP */
 
-.map h2{
+.map h2 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.map iframe{
+.map iframe {
     width: 100%;
     height: 450px;
     border-radius: var(--radius);
@@ -860,75 +890,90 @@ button {
 
 /* Footer */
 
-footer{
+footer {
     background: var(--color-dark);
     color: var(--color-white);
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     padding: 60px 8%;
     margin-top: 80px;
     position: relative;
 }
 
-footer h3{
+footer h3 {
     color: var(--color-white);
 }
 
-footer p{
+footer p {
     color: #d1d5db;
 }
 
-footer ul li{
+footer ul li {
     margin-bottom: 10px;
 }
 
-footer a{
+footer a {
     transition: var(--transition);
 }
 
-footer a:hover{
+footer a:hover {
     color: var(--color-primary);
 }
 
 /* 1. Aligner les icônes de réseaux sociaux (Suivez-nous) */
 footer div:nth-child(3) a {
     display: inline-block;
-    font-size: 1.5rem; /* Agrandit un peu les icônes pour le style */
+    font-size: 1.5rem;
+    /* Agrandit un peu les icônes pour le style */
     color: var(--color-white);
-    margin-right: 15px; /* Espace horizontal entre chaque icône */
+    margin-right: 15px;
+    /* Espace horizontal entre chaque icône */
     transition: var(--transition);
 }
 
 footer div:nth-child(3) a:hover {
-    color: var(--color-primary); /* Devient bleu au survol */
-    transform: translateY(-3px);  /* Léger saut vers le haut */
+    color: var(--color-primary);
+    /* Devient bleu au survol */
+    transform: translateY(-3px);
+    /* Léger saut vers le haut */
 }
+
 /* 2. Cibler la DIV qui contient le copyright pour qu'elle s'étale sur les 4 colonnes */
-footer > div:last-of-type {
-    grid-column: 1 / -1; /* Force le bloc à prendre TOUTE la largeur (de la col 1 à la fin) */
-    text-align: center;  /* Centre le texte à l'intérieur de ce grand bloc */
+footer>div:last-of-type {
+    grid-column: 1 / -1;
+    /* Force le bloc à prendre TOUTE la largeur (de la col 1 à la fin) */
+    text-align: center;
+    /* Centre le texte à l'intérieur de ce grand bloc */
     margin-top: 40px;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* La jolie ligne de séparation blanche */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* La jolie ligne de séparation blanche */
 }
 
 /* Style du texte du copyright lui-même */
-footer > div:last-of-type p {
+footer>div:last-of-type p {
     color: #d1d5db;
     font-size: 0.95rem;
-    margin-bottom: 0; /* Évite les décalages bizarres */
+    margin-bottom: 0;
+    /* Évite les décalages bizarres */
 }
+
 /* 3. Le bouton "Retour en haut" (flèche bleue en bas à droite) */
 #back-to-top {
-    position: absolute; /* Il se repère par rapport au footer */
-    bottom: 45px;       /* Aligné sur la hauteur du texte copyright */
-    right: 8%;          /* Aligné sur la marge globale de ton site */
-    background-color: var(--color-primary); /* Fond bleu */
+    position: absolute;
+    /* Il se repère par rapport au footer */
+    bottom: 45px;
+    /* Aligné sur la hauteur du texte copyright */
+    right: 8%;
+    /* Aligné sur la marge globale de ton site */
+    background-color: var(--color-primary);
+    /* Fond bleu */
     color: var(--color-white);
     width: 50px;
     height: 50px;
-    border-radius: 50%; /* Devient un cercle parfait */
+    border-radius: 50%;
+    /* Devient un cercle parfait */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -938,6 +983,208 @@ footer > div:last-of-type p {
 }
 
 #back-to-top:hover {
-    background-color: var(--color-secondary); /* Devient vert/turquoise au survol */
-    transform: translateY(-5px); /* Animation mécanique fluide */
+    background-color: var(--color-secondary);
+    /* Devient vert/turquoise au survol */
+    transform: translateY(-5px);
+    /* Animation mécanique fluide */
+}
+
+body.dark-mode {
+
+    --color-light: #0F172A;
+    --color-white: #1E293B;
+    --color-dark: #F8FAFC;
+    --color-gray: #CBD5E1;
+
+    --shadow: 0 8px 20px rgba(255, 255, 255, .08);
+
+}
+
+/* Responsive */
+/* Tablette */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+    }
+
+    
+    .nav-links {
+        display: none;
+        gap: 15px;
+    }
+    .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: var(--color-white);
+    padding: 20px;
+    gap: 20px;
+    box-shadow: var(--shadow);
+}
+
+    #menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--color-dark);
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+
+    #hero .hero-image {
+        order: -1;
+    }
+
+    #statistiques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #pourquoi article {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    #intervenants {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #sponsors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .jour {
+        grid-template-columns: 1fr;
+    }
+
+    #speakersGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo span {
+        font-size: 1.1rem;
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 70px 20px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #countdown {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #statistiques {
+        grid-template-columns: 1fr;
+    }
+
+    #pourquoi article {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    #intervenants {
+        grid-template-columns: 1fr;
+    }
+
+    #sponsors {
+        grid-template-columns: 1fr;
+    }
+
+    .jour {
+        grid-template-columns: 1fr;
+    }
+
+    #speakersGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    footer div:nth-last-child {
+        grid-column: auto;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #hero {
+        gap: 80px;
+    }
+
+    #statistiques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #intervenants {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #speakersGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #sponsors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
