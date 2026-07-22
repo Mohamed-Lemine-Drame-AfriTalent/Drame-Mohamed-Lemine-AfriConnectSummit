@@ -61,6 +61,8 @@ body {
     line-height: 1.6;
     background-color: var(--color-light);
     transition: background .3s ease, color .3s ease;
+     padding-top: 90px;
+    
 }
 
 /* Défilement fluide */
@@ -141,9 +143,37 @@ button {
     padding: 20px 8%;
     background: var(--color-white);
     box-shadow: var(--shadow);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+/* Style après le scroll */
+.navbar.scrolled {
+    padding: 12px 8%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Logo plus petit */
+.navbar.scrolled .logo img {
+    width: 65px;
+    height: 42px;
+    transition: 0.35s;
+}
+
+/* Texte du logo plus petit */
+.navbar.scrolled .logo span {
+    font-size: 1.3rem;
+}
+
+/* Version sombre */
+body.dark-mode .navbar.scrolled {
+    background: rgba(30, 41, 59, 0.95);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
 }
 
 .logo {
@@ -891,7 +921,7 @@ button {
 /* Footer */
 
 footer {
-    background: var(--color-dark);
+    background: var(--color-white);
     color: var(--color-white);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -902,11 +932,11 @@ footer {
 }
 
 footer h3 {
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 footer p {
-    color: #d1d5db;
+    color: var(--color-dark);
 }
 
 footer ul li {
@@ -915,6 +945,7 @@ footer ul li {
 
 footer a {
     transition: var(--transition);
+    color: var(--color-dark);
 }
 
 footer a:hover {
@@ -926,7 +957,7 @@ footer div:nth-child(3) a {
     display: inline-block;
     font-size: 1.5rem;
     /* Agrandit un peu les icônes pour le style */
-    color: var(--color-white);
+    color: var(--color-dark);
     margin-right: 15px;
     /* Espace horizontal entre chaque icône */
     transition: var(--transition);
@@ -953,7 +984,7 @@ footer>div:last-of-type {
 
 /* Style du texte du copyright lui-même */
 footer>div:last-of-type p {
-    color: #d1d5db;
+    color: var(--color-dark);
     font-size: 0.95rem;
     margin-bottom: 0;
     /* Évite les décalages bizarres */
