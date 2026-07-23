@@ -232,6 +232,7 @@ body.dark-mode .navbar.scrolled {
     gap: 60px;
     min-height: 90vh;
     padding: 120px 8%;
+     animation: heroFade 1.2s ease;
 }
 
 #hero h1 {
@@ -252,6 +253,7 @@ body.dark-mode .navbar.scrolled {
     border-radius: 25px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
 }
+
 
 .btn {
     display: inline-block;
@@ -462,11 +464,14 @@ body.dark-mode .navbar.scrolled {
 /* Le conteneur magique : il passe en grille sur PC, et reste en liste sur Mobile */
 .jour {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
     /* Espace régulier entre toutes les cartes */
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     /* Augmenter à 60% pour aerer le disegn entre chaque jour */
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 20px;
 }
 
 /* Pour que le titre H2 prenne toute la largeur de la grille et ne soit pas coincé dans une case */
@@ -533,6 +538,7 @@ body.dark-mode .navbar.scrolled {
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: space-between;
     transition: var(--transition);
     position: relative;
@@ -1042,6 +1048,7 @@ footer>div:last-of-type p {
     font-size: 1.2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
+    opacity: 0;
 }
 
 #back-to-top:hover {
@@ -1298,7 +1305,7 @@ body.dark-mode {
 }
 
 .tab-content.active {
-    display: block;
+    display: grid;
 }
 
 #back-to-top.show{
