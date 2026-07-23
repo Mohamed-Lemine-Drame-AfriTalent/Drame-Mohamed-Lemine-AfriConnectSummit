@@ -13,10 +13,10 @@ themeToglle.addEventListener("click", () =>{
     document.body.classList.toggle("dark-mode");
     if(document.body.classList.contains("dark-mode")){
         localStorage.setItem("theme", "dark");
-        themeToglle.textContent = "☀️";
+        themeToglle.innerHTML = '<i class ="fa-solid fa-sun"></i>';
     } else {
         localStorage.setItem("theme", "light");
-        themeToglle.textContent = "🌙"
+        themeToglle.innerHTML = '<i class ="fa-solid fa-moon"></i>';
     }
 });
 
@@ -32,18 +32,6 @@ menuToggle.addEventListener("click", () => {
 }
 /* NAVBAR DYNAMIQUE */
 
-// const navbar = document.querySelector(".navbar");
-// window.addEventListener("scroll", () => {
-//     if(window.scrolly > 80){
-//         navbar.style.background = "rgba(255,255,255,0.95)";
-//         navbar.style.backdropFilter = "blur(10px)";
-//         navbar.style.boxShadow = "0 8px 20px rgba(0,0,0,.15)";
-//     } else {
-//          navbar.style.background = "";
-//         navbar.style.backdropFilter = "";
-//         navbar.style.boxShadow = "";
-//     }
-// });
 
 const navbar = document.querySelector(".navbar");
 
@@ -72,4 +60,72 @@ backToTop.addEventListener("click", (e) => {
         top: 0,
         behavior:"smooth"
     });
+});
+
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        tabContents.forEach(tab => tab.classList.remove("active"));
+
+        button.classList.add("active");
+
+        document
+            .getElementById(button.dataset.day)
+            .classList.add("active");
+
+    });
+
+});
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".speaker-card");
+
+if(filterButtons.length > 0){
+
+    filterButtons.forEach(button=>{
+
+        button.addEventListener("click",()=>{
+
+            filterButtons.forEach(btn=>btn.classList.remove("active"));
+
+            button.classList.add("active");
+
+            const filter = button.dataset.filter;
+
+            cards.forEach(card=>{
+
+                if(filter==="all" || card.dataset.category===filter){
+
+                    card.style.display="block";
+
+                }else{
+
+                    card.style.display="none";
+
+                }
+
+            });
+
+        });
+
+    });
+
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+document.querySelectorAll(".fade-in, .slide-in, .zoom-in").forEach(section => {
+    observer.observe(section);
 });
